@@ -1,0 +1,392 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  margin: 0;
+  background-color: #f6efe8;
+}
+
+html {
+  box-sizing: border-box;
+  font-style: 16px;
+  color: #1d1d1d;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.header {
+  display: block;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+  z-index: 1000;
+  top: 0;
+}
+.nav__container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav__container__logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__container__logo__item {
+  width: 80px;
+  height: 80px;
+  line-height: inherit;
+  display: inline-block;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.nav__container__logo__item__img {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.home {
+  width: 100%;
+  padding: 0 16px;
+}
+.home__headline h1 {
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  font-size: 44px;
+}
+.home__headline p {
+  line-height: 1.444;
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup--button {
+  display: flex;
+  background-color: #611f69;
+  border-radius: 10px;
+  height: 70px;
+  padding: 20px, 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signup--link {
+  display: flex;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  white-space: normal;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.signup--google {
+  height: 70px;
+  padding: 20px, 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #4285f4;
+  text-decoration: none;
+  color: #fff;
+}
+
+.signup--google img {
+  height: 80%;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+.signup--google a {
+  margin: 0 auto;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.home__illustration img {
+  width: 100%;
+}
+
+.home2 {
+  overflow: hidden;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+.home2__container {
+  margin: 0 auto;
+  padding: 0 17px;
+  text-align: center;
+}
+.home2__container__logo {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.home2__container__logo__item {
+  max-width: 170px;
+  margin: 10px;
+  text-align: center;
+}
+.home2img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.home5 {
+  background-color: white;
+  overflow: hidden;
+  margin: px 0;
+}
+.home5__container {
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.home5__container__link {
+  color: #1264a3;
+  display: inline;
+  font-size: calc(1.125rem + 0 * (100vw - 400px) / 624);
+}
+.home5__container__grid {
+  margin-top: 32px;
+}
+.home5__container__grid__copy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.home5__container__grid__img {
+  max-width: 450px;
+  height: 260px;
+}
+.home5__container__headline {
+  margin-bottom: 16px;
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  font-size: calc(1.5rem + 8 * (100vw - 400px) / 624);
+  line-height: 1.1875;
+  letter-spacing: -0.3px;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  margin-bottom: 7px;
+  padding: 40px 16px 16px 16px;
+}
+
+.instructions__number {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #611f69;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.number--item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.instructions__text {
+  margin-bottom: 18px;
+}
+
+.example {
+  max-width: 100%;
+}
+
+.example img {
+  padding: 12px;
+}
+
+.home7 {
+  padding: 80px 0 96px 0;
+  width: 100%;
+  height: auto;
+  min-height: 370px;
+  overflow: visible;
+  background-size: 1300px 700px;
+  background-repeat: repeat;
+  background-color: #4a154b;
+  clip-path: ellipse(105% 100% at center top);
+  display: flex;
+  align-items: center;
+  height: 370px;
+  text-align: center;
+}
+.home7__container {
+  margin: 0 auto;
+  padding: 0 16px;
+  font-size: calc(2rem + 6 * (100vw - 400px) / 624);
+  text-align: center;
+}
+.home7__container__headline {
+  font-size: calc(2rem + 6 * (100vw - 400px) / 624);
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  line-height: 1.158;
+  letter-spacing: -0.8px;
+}
+.home7__container__link {
+  padding: 20px 40px;
+  appearance: none;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.28571429;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 19px 40px 20px;
+  display: block;
+  transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1), color 420ms cubic-bezier(0.165, 0.84, 0.44, 1), background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: calc(0.875rem + 0 * (100vw - 400px) / 624);
+  border-bottom: none;
+  background-color: #fff;
+  color: #611f69;
+  fill: #611f69;
+  box-shadow: none;
+  width: 100%;
+  white-space: normal;
+}
+.home7__container__link--purple {
+  margin-top: 16px;
+  background-color: transparent;
+  color: #fff;
+  fill: #fff;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.footer {
+  background-color: white;
+  width: 100%;
+}
+.footer__container {
+  margin: 0 auto;
+  padding: 56px 17px 0 17px;
+}
+.footer__container__logo {
+  width: 50%;
+  line-height: inherit;
+  display: inline-block;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.footer__container__logo__img {
+  width: 100%;
+}
+.footer__container__nav {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.footer__container__nav__list {
+  margin-bottom: 16px;
+  font-size: calc(1.125rem + 0 * (100vw - 400px) / 624);
+  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.44;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container__nav__list__item {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.footer__container__nav__list__item__span {
+  text-transform: uppercase;
+  color: #1d1d1d;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  height: 40px;
+  position: relative;
+}
+.footer__container__lower {
+  clear: both;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.footer__container__lower__list {
+  list-style-type: none;
+  width: 100%;
+  padding-top: 16px;
+  margin: 0 auto;
+  font-size: calc(1.125rem + 0 * (100vw - 400px) / 624);
+  font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.44;
+  letter-spacing: normal;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer__container__lower__list__item {
+  margin-right: 16px;
+  padding: 16px 0;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.footer__container__legal {
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+.footer__container__legal__copy {
+  line-height: 1.25rem;
+  font-size: calc(0.75rem + 0 * (100vw - 400px) / 624);
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #454545;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */

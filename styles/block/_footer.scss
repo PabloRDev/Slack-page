@@ -1,0 +1,102 @@
+.footer {
+    background-color: white;
+  width: 100%;
+
+  &__container {
+    margin: 0 auto;
+    padding: 56px 17px 0 17px;
+
+    &__logo {
+      width: 50%;
+      line-height: inherit;
+      display: inline-block;
+      border: none;
+      display: flex;
+      align-items: center;
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+    &__nav {
+      display: block;
+      margin-top: 32px;
+      margin-bottom: 16px;
+
+      &__list {
+        margin-bottom: 16px;
+        font-size: calc(1.125rem + (0 * (100vw - 400px) / 624));
+        font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+          Tahoma, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.44;
+        letter-spacing: normal;
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+          display: inline-block;
+          font-weight: 700;
+          font-size: 0.9375rem;
+
+          &__span {
+            text-transform: uppercase;
+            color: #1d1d1d;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            height: 40px;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    &__lower {
+      clear: both;
+      text-align: center;
+      margin-bottom: 1rem;
+      background-color: transparent;
+
+      &__list {
+        list-style-type: none;
+        width: 100%;
+        padding-top: 16px;
+        margin: 0 auto;
+        font-size: calc(1.125rem + (0 * (100vw - 400px) / 624));
+        font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+          Tahoma, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.44;
+        letter-spacing: normal;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &__item {
+          margin-right: 16px;
+          padding: 16px 0;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 0.9375rem;
+        }
+      }
+    }
+
+    &__legal {
+      background-color: transparent;
+      margin-bottom: 32px;
+
+      &__copy {
+        line-height: 1.25rem;
+        font-size: calc(.75rem + (0 * (100vw - 400px)/ 624));
+        text-align: left;
+        font-weight: 400;
+        letter-spacing: normal;
+        color: #454545;
+      }
+    }
+  }
+}
